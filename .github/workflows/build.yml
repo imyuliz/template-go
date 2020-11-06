@@ -1,5 +1,5 @@
 # base on: https://gocn.vip/topics/9839
-name: Go
+name: Lint Test Build
 
 on:
   push:
