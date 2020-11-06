@@ -15,3 +15,8 @@ func main() {
 	fmt.Println("Hi! I'm yuliz")
 
 }
+
+// HelloWorld define hello world
+func HelloWorld() {
+	fmt.Println("hello world")
+}
