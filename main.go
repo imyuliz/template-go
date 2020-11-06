@@ -15,6 +15,9 @@ func main() {
 	fmt.Println("Hi! I'm yuliz")
 	fmt.Println("Hi! I'm yuliz")
 	fmt.Println("Hi! I'm yuliz")
+	fmt.Println("Hi! I'm yuliz")
+	fmt.Println("Hi! I'm yuliz")
+	fmt.Println("Hi! I'm yuliz")
 
 }
 
