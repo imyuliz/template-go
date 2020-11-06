@@ -13,6 +13,7 @@ func main() {
 	fmt.Printf("built on %s\n", version.BuildSystem)
 	fmt.Println("form branch ci-test")
 	fmt.Println("Hi! I'm yuliz")
+	fmt.Println("Hi! I'm yuliz")
 
 }
 
