@@ -14,7 +14,6 @@ func main() {
 	fmt.Println("form branch ci-test")
 	fmt.Println("Hi! I'm yuliz")
 	fmt.Println("Hi! I'm yuliz")
-	fmt.Println("Hi! I'm yuliz")
 
 }
 
