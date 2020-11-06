@@ -11,5 +11,7 @@ func main() {
 	fmt.Printf("commit: %s\n", version.GitCommit)
 	fmt.Printf("built on %s\n", version.BuildGoVersion)
 	fmt.Printf("built on %s\n", version.BuildSystem)
+	fmt.Println("form branch ci-test")
 	fmt.Println("Hi! I'm yuliz")
+
 }
