@@ -1,11 +1,12 @@
 # base on: https://gocn.vip/topics/9839
 name: Lint Test Build
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+on: push
 
 jobs:
 
