@@ -57,7 +57,7 @@ template for Go project.
 ### 常见命令
 
 1. 手动测试镜像构建 `docker build -t template-go -f build/docker/Dockerfile .`
-2. 发布新版本 git tag v1.0.0 && git push --tags
+2. 发布新版本 `git tag v1.0.0 && git push --tags`
 ### Git 提交规范
 
 1. 在提交 Commit message 信息时, 应该保证 message 能够简要说明此次变更的性质和作用域。
