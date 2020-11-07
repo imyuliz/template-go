@@ -49,7 +49,7 @@ template for Go project.
 3. 如需基于此模板自定义action,请查看GitHub Actions Workflow 的完整语法: https://help.github.com/articles/workflow-syntax-for-github-actions
 4. 如需修改`docker`镜像推送仓库或者触发配置等一些列问题(如推送到指定仓库)请查看 README: https://github.com/imyuliz/Publish-Docker-Github-Action
 5. 如关注自动发布细节信息 https://github.com/marketplace/actions/goreleaser-action
-6. 如想讨论如何构建Go 最小镜像 https://juejin.im/post/6844904174396637197
+6. 如想讨论如何构建Go 最小镜像 https://juejin.im/post/6844904174396637197 https://juejin.im/post/6844904174396637197 https://gocn.vip/topics/10359
 7. google
 
 ### Git 提交规范

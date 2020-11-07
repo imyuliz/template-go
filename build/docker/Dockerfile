@@ -16,8 +16,3 @@ COPY --from=builder /usr/src/app/manifest.txt /opt/app/manifest.txt
 COPY --from=builder /usr/src/app/conf/ /opt/app/conf/
 COPY --from=builder /usr/src/app/bin/server /opt/app/
 CMD ["/opt/app/server"]
-
-
-
-# base: https://juejin.im/post/6844904174396637197
-# base: https://gocn.vip/topics/10359
