@@ -51,8 +51,13 @@ template for Go project.
 5. 如关注自动发布细节信息 https://github.com/marketplace/actions/goreleaser-action
 6. 如想讨论如何构建Go 最小镜像 https://juejin.im/post/6844904174396637197 https://juejin.im/post/6844904174396637197 https://gocn.vip/topics/10359
 7. google
-8. 收到测试镜像构建 `docker build -t template-go -f build/docker/Dockerfile .`
 
+
+
+### 常见命令
+
+1. 手动测试镜像构建 `docker build -t template-go -f build/docker/Dockerfile .`
+2. 发布新版本 git tag v1.0.0 && git push --tags
 ### Git 提交规范
 
 1. 在提交 Commit message 信息时, 应该保证 message 能够简要说明此次变更的性质和作用域。
