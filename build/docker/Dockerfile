@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 ENV GOPROXY=https://goproxy.cn
 # COPY go.mod ./
 # COPY go.sum ./
-# COPY Makefile ./
+COPY manifest ./
 # RUN go mod download
 COPY . .
 RUN make build-min-docker
