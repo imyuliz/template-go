@@ -31,12 +31,15 @@ template for Go project.
 
 使用此模板创建项目后:
 
-step1: 执行`go mod init` 例如: `go mod init github.com/imyuliz/template-go`
-step2: 修改`Makefile`文件中的最顶端的变量`PROJECT_NAME`为go mod init指定的项目名字,例如: `PROJECT_NAME := "github.com/imyuliz/template-go"`
-step3: 如需支持 `特性5`, 需要在`对应仓库`->`Settings`->`Secrets` 创建秘钥`CODECOV_TOKEN`, 对应值请登录: https://www.codecov.io/ 使用GitHub 关联登录,然后导入对应仓库后自动生成值,然后回写至 github 仓库秘钥
-step4: 修改相关配置 
-        (1)如需支持推送镜像到`dockerhub`, 为对应仓库配 置秘钥`DOCKERHUB_USERNAME`和`DOCKERHUB_PASSWORD`,
-        (2)修改`.github/workflows/build.yml` **70行**和`.github/workflows/release.yml`**74行** name 为dockerhub 镜像仓库的名字 例如:`name: imyuliz/template-go`
+1. 执行`go mod init` 例如: `go mod init github.com/imyuliz/template-go`
+
+2. 修改`Makefile`文件中的最顶端的变量`PROJECT_NAME`为go mod init指定的项目名字,例如: `PROJECT_NAME := "github.com/imyuliz/template-go"`
+
+3. 如需支持 `特性5`, 需要在`对应仓库`->`Settings`->`Secrets` 创建秘钥`CODECOV_TOKEN`, 对应值请登录: https://www.codecov.io/ 使用GitHub 关联登录,然后导入对应仓库后自动生成值,然后回写至 github 仓库秘钥
+
+4. 修改相关配置 
+    1. 如需支持推送镜像到`dockerhub`, 为对应仓库配 置秘钥`DOCKERHUB_USERNAME`和`DOCKERHUB_PASSWORD`,
+    2. 修改`.github/workflows/build.yml` **70行**和`.github/workflows/release.yml`**74行** name 为dockerhub 镜像仓库的名字 例如:`name: imyuliz/template-go`
 
 
 ### 遇到问题如何处理?
