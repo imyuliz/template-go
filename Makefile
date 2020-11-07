@@ -6,7 +6,9 @@ LDFLAGS := "-s -w -X '$(PROJECT_NAME)/version.GitCommit=`git log | grep commit |
 build: ## Build the binary file
 	make clean
 	mkdir -p bin
-	go build -ldflags=${LDFLAGS} -o bin/main 
+	go build -ldflags=${LDFLAGS} -o bin/server
+build-min-docker:
+	go build -ldflags=${LDFLAGS} -o bin/server && upx --best bin/server -o _upx_server && mv -f _upx_server bin/server
 clean: ## Remove previous build
 	rm -rf bin
 dep: ## Get the dependencies
@@ -16,11 +18,13 @@ local: ## Built on local env project
 linux: ## Build the linux version binary file
 	rm -rf bin
 	mkdir -p bin
-	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags=${LDFLAGS} -o bin/main
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags=${LDFLAGS} -o bin/server
 lint: ## Lint Golang files
 	@golint -set_exit_status ${PKG_LIST}
+manifest:
+	echo `git log | grep commit | head -1 | cut -d" " -f2` > manifest
 run: ## run project
-	./bin/main
+	./bin/server
 test: ## Run unittests
 	@go test -short ${PKG_LIST}
 test-coverage: ## Run tests with coverage
