@@ -1,4 +1,5 @@
 # base on: https://gocn.vip/topics/9839
+# look to: https://github.com/marketplace?type=actions
 name: Lint Test Build
 
 # on:
@@ -65,7 +66,7 @@ jobs:
       - name: Build
         run: make build
       - name: Build and push image to dockerhub
-        uses: mlycore/Publish-Docker-Github-Action@master
+        uses: imyuliz/Publish-Docker-Github-Action@master
         with:
           name: yulibaozi/template-go
           # docker build -t template-go -f build/docker/Dockerfile .
