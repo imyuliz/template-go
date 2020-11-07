@@ -13,7 +13,7 @@ build-min-docker:
 	go build -ldflags=${LDFLAGS} -o bin/server 
 clean: ## Remove previous build
 	rm -rf bin
-	rm -rf manifest
+	rm -rf manifest.txt
 dep: ## Get the dependencies
 	@go mod download
 local: ## Built on local env project
@@ -24,8 +24,9 @@ linux: ## Build the linux version binary file
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags=${LDFLAGS} -o bin/server
 lint: ## Lint Golang files
 	@golint -set_exit_status ${PKG_LIST}
+
 manifest:
-	echo `git log | grep commit | head -1 | cut -d" " -f2` > manifest
+	echo `git log | grep commit | head -1 | cut -d" " -f2` > manifest.txt
 run: ## run project
 	./bin/server
 test: ## Run unittests
