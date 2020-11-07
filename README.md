@@ -1,12 +1,19 @@
 
-# template-go
-[![Actions Status](https://github.com/imyuliz/template-go/workflows/Test/badge.svg)](https://github.com/imyuliz/template-go/actions)
-[![Actions Status](https://github.com/imyuliz/template-go/workflows/Integration%20Test/badge.svg)](https://github.com/imyuliz/template-go/actions)
-[![Actions Status](https://github.com/imyuliz/template-go/workflows/Integration%20Test%20Github/badge.svg)](https://github.com/imyuliz/template-go/actions)
-template for Go project.
+<p align="center">
+  <img alt="GoReleaser Logo" src="https://avatars2.githubusercontent.com/u/24697112?v=3&s=200" height="140" />
+  <h3 align="center">Template-go</h3>
+  <p align="center">
+    <a href="https://github.com/imyuliz/template-go/actions"><img alt="GitHub release" src="https://github.com/imyuliz/template-go/workflows/Test/badge.svg"></a>
+    <a href="https://github.com/imyuliz/template-go/actions"><img alt="GitHub marketplace" src="https://github.com/imyuliz/template-go/workflows/Integration%20Test/badge.svg"></a>
+    <a href="https://github.com/imyuliz/template-go/actions"><img alt="Test workflow" src="https://github.com/imyuliz/template-go/workflows/Integration%20Test%20Github/badge.svg"></a>
+    <a href="https://codecov.io/gh/goreleaser/goreleaser-action"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/imyuliz/template-go?logo=codecov&style=flat-square"></a>
+  </p>
+</p>
+
 ---
 
-#How To Use template?
+template for Go project.
+---
 
 ### 特性
 
