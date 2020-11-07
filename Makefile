@@ -8,7 +8,8 @@ build: ## Build the binary file
 	mkdir -p bin
 	go build -ldflags=${LDFLAGS} -o bin/server
 build-min-docker:
-	go build -ldflags=${LDFLAGS} -o bin/server && upx --best bin/server -o _upx_server && mv -f _upx_server bin/server
+	# go build -ldflags=${LDFLAGS} -o bin/server && upx --best bin/server -o _upx_server && mv -f _upx_server bin/server
+	go build -ldflags=${LDFLAGS} -o bin/server 
 clean: ## Remove previous build
 	rm -rf bin
 dep: ## Get the dependencies

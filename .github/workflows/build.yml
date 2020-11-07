@@ -70,6 +70,7 @@ jobs:
         uses: mlycore/Publish-Docker-Github-Action@master
         with:
           name: yulibaozi/template-go
+          # docker build -t template-go -f build/docker/Dockerfile .
           dockerfile: build/docker/Dockerfile
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
