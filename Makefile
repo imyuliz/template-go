@@ -11,9 +11,8 @@ clean: ## Remove previous build
 	rm -rf bin
 dep: ## Get the dependencies
 	@go mod download
-local: ## Built on local env and run project
+local: ## Built on local env project
 	make build
-	make run
 linux: ## Build the linux version binary file
 	rm -rf bin
 	mkdir -p bin
