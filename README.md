@@ -6,7 +6,7 @@
     <a href="https://github.com/imyuliz/template-go/actions"><img alt="GitHub release" src="https://github.com/imyuliz/template-go/workflows/Test/badge.svg"></a>
     <a href="https://github.com/imyuliz/template-go/actions"><img alt="GitHub marketplace" src="https://github.com/imyuliz/template-go/workflows/Integration%20Test/badge.svg"></a>
     <a href="https://github.com/imyuliz/template-go/actions"><img alt="Test workflow" src="https://github.com/imyuliz/template-go/workflows/Integration%20Test%20Github/badge.svg"></a>
-    <a href="https://codecov.io/gh/goreleaser/goreleaser-action"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/imyuliz/template-go?logo=codecov&style=flat-square"></a>
+    <a href="https://codecov.io/gh/gimyuliz/template-go"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/imyuliz/template-go?logo=codecov&style=flat-square"></a>
   </p>
 </p>
 
