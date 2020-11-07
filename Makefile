@@ -5,6 +5,7 @@ LDFLAGS := "-s -w -X '$(PROJECT_NAME)/version.GitCommit=`git log | grep commit |
 .PHONY: build
 build: ## Build the binary file
 	make clean
+	make manifest
 	mkdir -p bin
 	go build -ldflags=${LDFLAGS} -o bin/server
 build-min-docker:
