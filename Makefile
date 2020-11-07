@@ -12,6 +12,7 @@ build-min-docker:
 	go build -ldflags=${LDFLAGS} -o bin/server 
 clean: ## Remove previous build
 	rm -rf bin
+	rm -rf manifest
 dep: ## Get the dependencies
 	@go mod download
 local: ## Built on local env project
