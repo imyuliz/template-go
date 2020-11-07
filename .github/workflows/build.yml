@@ -1,7 +1,4 @@
-# base on: https://gocn.vip/topics/9839
-# look to: https://github.com/marketplace?type=actions
 name: Lint Test Build
-
 # on:
 #   push:
 #     branches: [ main ]
@@ -22,7 +19,9 @@ jobs:
 
       - name: Check out code
         uses: actions/checkout@v2
-
+      # - name: Granting private modules access
+        # run: |
+          # git config --global url."https://${{ secrets.PROJECT_KEY }}:x-oauth-basic@github.com/imyuliz/project".insteadOf "https://github.com/imyuliz/project"
       - name: Lint Go Code
         run: |
           export PATH=$PATH:$(go env GOPATH)/bin # temporary fix. See https://github.com/actions/setup-go/issues/14
