@@ -10,7 +10,7 @@ func main() {
 	fmt.Printf("commit: %20s\n", version.GitCommit)
 	fmt.Printf("built on %20s\n", version.BuildGoVersion)
 	fmt.Printf("built on %20s\n", version.BuildSystem)
-	fmt.Println("Hi! I'm yuliz")
+	fmt.Println("Hi! I'm yulizz")
 
 }
 
