@@ -26,7 +26,7 @@ template for Go project.
 5. 基于`CodeCov` 自动生成测试覆盖率
 6. 将`commitid`,`BuildGoVersion`,`BuildSystem` 写入二进制中, 启动时日志可见,有利于版本和问题定位
 7. `runner`无需`Go`环境仍可以正常构建镜像,基于`docker`多阶段构建
-
+8. 镜像极小，镜像只有500KiB, 缺点是: 不可以exec 进入容器，在问题排查的时候可能会很困难，暂不适合于生产，如需要生产使用，替换基础镜像即可
 
 ### 如何使用?
 
@@ -39,8 +39,8 @@ template for Go project.
 3. 如需支持 `特性5`, 需要在`对应仓库`->`Settings`->`Secrets` 创建秘钥`CODECOV_TOKEN`, 对应值请登录: https://www.codecov.io/ 使用GitHub 关联登录,然后导入对应仓库后自动生成值,然后回写至 github 仓库秘钥
 
 4. 修改相关配置 
-    1. 如需支持推送镜像到`dockerhub`, 为对应仓库配 置秘钥`DOCKERHUB_USERNAME`和`DOCKERHUB_PASSWORD`,
-    2. 修改`.github/workflows/build.yml` **70行**和`.github/workflows/release.yml`**74行** name 为dockerhub 镜像仓库的名字 例如:`name: imyuliz/template-go`
+    1. 如需支持推送镜像到`dockerhub`, 为对应仓库配置秘钥`DOCKERHUB_USERNAME`和`DOCKERHUB_PASSWORD`,
+    2. 在仓库配置秘钥`IMAGENAME`来指定镜像名字，例如: `imyuliz/template-go`
 
 
 ### 遇到问题如何处理?
