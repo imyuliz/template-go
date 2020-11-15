@@ -40,7 +40,7 @@ template for Go project.
 
 4. 修改相关配置 
     1. 如需支持推送镜像到`dockerhub`, 为对应仓库配置秘钥`DOCKERHUB_USERNAME`和`DOCKERHUB_PASSWORD`,
-    2. 在仓库配置秘钥`IMAGENAME`来指定镜像名字，例如: `imyuliz/template-go`
+    2. 在仓库配置秘钥`IMAGE_NAME`来指定镜像名字，例如: `imyuliz/template-go`
 
 
 ### 遇到问题如何处理?

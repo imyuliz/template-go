@@ -67,7 +67,7 @@ jobs:
       - name: Build and push image to dockerhub
         uses: imyuliz/Publish-Docker-Github-Action@master
         with:
-          name: ${{ secrets.IMAGENAME }}
+          name: ${{ secrets.IMAGE_NAME }}
           # docker build -t template-go -f build/docker/Dockerfile .
           dockerfile: build/docker/Dockerfile
           username: ${{ secrets.DOCKERHUB_USERNAME }}
