@@ -32,7 +32,7 @@ template for Go project.
 
 使用此模板创建项目后:
 
-1. 执行`go mod init` 例如: `go mod init github.com/imyuliz/template-go`
+1. 执行`go mod init`  例如: `go mod init github.com/imyuliz/template-go`
 
 2. 修改`Makefile`文件中的最顶端的变量`PROJECT_NAME`为go mod init指定的项目名字,例如: `PROJECT_NAME := "github.com/imyuliz/template-go"`
 
